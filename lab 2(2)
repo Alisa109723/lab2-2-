@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main()  { 
-    int a = 1;
-    int b = 15;
-    int c = 7; 
+int main() {
+    const int a = 1; // Константа a
+    const int b = 15; // Константа b
+    const int c = 7; // Константа c
 
-double y = (2.0 * a + 1 + c) / b - (3.0 * b + c) / c;
+    double y = (2.0 * a + 1 + c) / b - (3.0 * b + c) / c;
 
-printf("Обчислення значення функції y = (2a + 1 + c) / b - (3b + c) / c\n");
-printf("Для заданих значень: a = %d, b = %d, c = %d\n", a, b, c);
-printf("Результат: y = %.4f\n", y);
+    printf("Обчислення значення функції y = (2a + 1 + c) / b - (3b + c) / c\n");
+    printf("Для заданих значень: a = %d, b = %d, c = %d\n", a, b, c);
+    printf("Результат: y = %.4f\n", y);
 
-return 0;
+    return 0;
 }
